@@ -1,0 +1,29 @@
+[project]
+name = "mage-arena-image-to-flag"
+version = "0.0.0"
+description = "Upload images to the in-game flag drawings"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Colton Gowans", email = "coltongowans@gmail.com"}
+]
+keywords = ["mage-arena", "image-processing", "texture-mapping", "uv-coordinates", "opencv"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "opencv-python>=4.5.0",
+]
+
+[project.urls]
+Repository = "https://github.com/ColtG5/mage-arena-image-to-flag"
+Issues = "https://github.com/ColtG5/mage-arena-image-to-flag/issues"
+
+[project.scripts]
+mage-arena = "main:main"
+
